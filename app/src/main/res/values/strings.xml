@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="feels_like">Feels like %1$d°</string>
+    <string name="temperature_with_symbol">%1$d°</string>
+    <string name="right_now">Right Now</string>
+    <string name="clear_search_history">Clear Search History</string>
+    <string name="search">Search</string>
+    <string name="searchbar_hint">Find a city, state or country</string>
+    <string name="use_metric_system">Use Metric system</string>
+    <string name="use_imperial_system">Use Imperial system</string>
+    <string name="empty_hint">Try searching for a city or county</string>
+    <string name="current_conditions">Current Conditions</string>
+    <string name="temperature">Temperature</string>
+    <string name="temperature_low">Temperature Low</string>
+    <string name="temperature_high">Temperature High</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="humidity">Humidity</string>
+    <string name="_48_hour_forecast">48 Hour Forecast</string>
+    <string name="empty_view_content_description">Search for a city or country, or enable location sharing to get weather information</string>
+    <string name="empty_message">Search for a city or country, or enable location sharing to get your weather details</string>
+    <string name="location_permission_rationale_content">Location sharing is needed to get your local weather information</string>
+    <string name="location_permission_rationale_title">Permission Needed</string>
+    <string name="permission_forced_request_message">Please enable location permissions in settings and try again after!</string>
+    <string name="generic_error">There was an error getting your weather information. Please try again</string>
+</resources>

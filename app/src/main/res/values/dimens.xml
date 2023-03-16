@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_8">8dp</dimen>
+    <dimen name="spacing_16">16dp</dimen>
+    <dimen name="spacing_24">24dp</dimen>
+    <dimen name="spacing_32">32dp</dimen>
+    <dimen name="weather_icon">92dp</dimen>
+    <dimen name="forecast_icon_size">64dp</dimen>
+    <dimen name="forecast_time_margin">48dp</dimen>
+    <!-- I couldn't find an exact height of the height bar in the material docs, so found this value
+       to be 88 dp by using Layout Inspector -->
+    <dimen name="search_bar_height">88dp</dimen>
+    <dimen name="error_image_size">128dp</dimen>
+</resources>

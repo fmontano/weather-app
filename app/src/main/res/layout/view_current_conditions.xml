@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/SectionTitle"
+        android:text="@string/current_conditions" />
+
+    <TextView
+        android:id="@+id/conditions_temperature_title"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/conditions_temperature_text_view"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        style="@style/CurrentConditionTitle"
+        android:text="@string/temperature"/>
+
+    <TextView
+        android:id="@+id/conditions_temperature_text_view"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        style="@style/CurrentConditionValue"
+        app:layout_constraintBaseline_toBaselineOf="@id/conditions_temperature_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="54"/>
+
+    <TextView
+        android:id="@+id/conditions_min_temperature_title"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/conditions_min_temperature_text_view"
+        app:layout_constraintTop_toBottomOf="@id/conditions_temperature_title"
+        style="@style/CurrentConditionTitle"
+        android:text="@string/temperature_low"/>
+
+    <TextView
+        android:id="@+id/conditions_min_temperature_text_view"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@id/conditions_min_temperature_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/CurrentConditionValue"
+        tools:text="25"/>
+
+    <TextView
+        android:id="@+id/conditions_max_temperature_title"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/conditions_max_temperature_text_view"
+        app:layout_constraintTop_toBottomOf="@id/conditions_min_temperature_title"
+        style="@style/CurrentConditionTitle"
+        android:text="@string/temperature_high"/>
+
+    <TextView
+        android:id="@+id/conditions_max_temperature_text_view"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@id/conditions_max_temperature_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/CurrentConditionValue"
+        tools:text="100"/>
+
+    <TextView
+        android:id="@+id/conditions_wind_speed_title"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/conditions_wind_speed_text_view"
+        app:layout_constraintTop_toBottomOf="@id/conditions_max_temperature_title"
+        style="@style/CurrentConditionTitle"
+        android:text="@string/wind_speed"/>
+
+    <TextView
+        android:id="@+id/conditions_wind_speed_text_view"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@id/conditions_wind_speed_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/CurrentConditionValue"
+        tools:text="↗ NE"/>
+
+    <TextView
+        android:id="@+id/conditions_humidity_title"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/conditions_humidity_text_view"
+        app:layout_constraintTop_toBottomOf="@id/conditions_wind_speed_title"
+        style="@style/CurrentConditionTitle"
+        android:text="@string/humidity"/>
+
+    <TextView
+        android:id="@+id/conditions_humidity_text_view"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@id/conditions_humidity_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/CurrentConditionValue"
+        tools:text="80%"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
